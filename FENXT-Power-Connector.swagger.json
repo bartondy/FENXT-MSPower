@@ -1,0 +1,6147 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "BB_FENXT_BETA",
+    "description": "FENXT Power Platform Connector - Microsoft Power Automate and Apps Connector for GL, AP, Treasury, Statistical Units designed to support CRUD (create, read, update, delete) interaction with Financial Edge records through unique workflows",
+    "version": "1.0"
+  },
+  "host": "api.sky.blackbaud.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/generalledger/v1/accounts/{account_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Get",
+        "description": "GL Account Get",
+        "operationId": "GL_Account_Get",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/accounts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Search Get",
+        "description": "GL Account Search Get",
+        "operationId": "GL_Account_Search_Get",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "search_text",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_account",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_account",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_account_code",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_account_code",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/accounts[": {},
+    "/generalledger/v1/accounts/cashflows": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Cashflows List",
+        "description": "GL Account Cashflows List",
+        "operationId": "GL_Account_Cashflows_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/accounts/codes": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Code List",
+        "description": "GL Account Code List",
+        "operationId": "GL_Account_Code_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/accounts/customfields": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Custom Fields List",
+        "description": "GL Account Custom Fields List",
+        "operationId": "GL_Account_Custom_Fields_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/accounts/funds": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Fund List",
+        "description": "GL Account Fund List",
+        "operationId": "GL_Account_Fund_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/accounts/segments/{segment_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Segment Get",
+        "description": "GL Account Segment Get",
+        "operationId": "GL_Account_Segment_Get",
+        "parameters": [
+          {
+            "name": "segment_id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/accounts/structure": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Structure List",
+        "description": "GL Account Structure List",
+        "operationId": "GL_Account_Structure_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/accounts/workingcapitals": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Account Working Capital list",
+        "description": "GL Account Working Capital list",
+        "operationId": "GL_Account_Working_Capital_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/budgets": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget List",
+        "description": "GL Budget List",
+        "operationId": "GL_Budget_List",
+        "parameters": []
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Create",
+        "description": "GL Budget Create",
+        "operationId": "GL_Budget_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "scenario_id": {
+                  "type": "string",
+                  "description": "scenario_id"
+                },
+                "start_period": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "start_period"
+                },
+                "end_period": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "end_period"
+                },
+                "start_fiscal_year": {
+                  "type": "string",
+                  "description": "start_fiscal_year"
+                },
+                "end_fiscal_year": {
+                  "type": "string",
+                  "description": "end_fiscal_year"
+                },
+                "budget_type": {
+                  "type": "string",
+                  "description": "budget_type"
+                },
+                "lines": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "project_id": {
+                        "type": "string",
+                        "description": "project_id"
+                      },
+                      "grant_description": {
+                        "type": "string",
+                        "description": "grant_description"
+                      },
+                      "notes": {
+                        "type": "string",
+                        "description": "notes"
+                      },
+                      "total": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "total"
+                      },
+                      "periods": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "sequence": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "sequence"
+                            },
+                            "year_id": {
+                              "type": "string",
+                              "description": "year_id"
+                            }
+                          }
+                        },
+                        "description": "periods"
+                      }
+                    }
+                  },
+                  "description": "lines"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Search",
+        "description": "GL Project Search",
+        "operationId": "GL_Project_Search",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "search_text",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_project",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_project",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "division",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "department",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Create",
+        "description": "GL Project Create",
+        "operationId": "GL_Project_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ui_project_id": {
+                  "type": "string",
+                  "description": "ui_project_id"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "start_date": {
+                  "type": "string",
+                  "description": "start_date"
+                },
+                "end_date": {
+                  "type": "string",
+                  "description": "end_date"
+                },
+                "prevent_data_entry": {
+                  "type": "boolean",
+                  "description": "prevent_data_entry"
+                },
+                "prevent_posting_after": {
+                  "type": "boolean",
+                  "description": "prevent_posting_after"
+                },
+                "posting_date": {
+                  "type": "string",
+                  "description": "posting_date"
+                },
+                "location": {
+                  "type": "string",
+                  "description": "location"
+                },
+                "division": {
+                  "type": "string",
+                  "description": "division"
+                },
+                "department": {
+                  "type": "string",
+                  "description": "department"
+                },
+                "account_restrictions": {
+                  "type": "object",
+                  "properties": {
+                    "allow_or_restrict": {
+                      "type": "string",
+                      "description": "allow_or_restrict"
+                    },
+                    "criteria": {
+                      "type": "string",
+                      "description": "criteria"
+                    },
+                    "account_range_from_account_number": {
+                      "type": "string",
+                      "description": "account_range_from_account_number"
+                    },
+                    "account_range_to_account_number": {
+                      "type": "string",
+                      "description": "account_range_to_account_number"
+                    }
+                  },
+                  "description": "account_restrictions"
+                },
+                "contacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "description": {
+                        "type": "string",
+                        "description": "description"
+                      },
+                      "country": {
+                        "type": "string",
+                        "description": "country"
+                      },
+                      "city": {
+                        "type": "string",
+                        "description": "city"
+                      },
+                      "county": {
+                        "type": "string",
+                        "description": "county"
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "state"
+                      },
+                      "address_line": {
+                        "type": "string",
+                        "description": "address_line"
+                      },
+                      "postal": {
+                        "type": "string",
+                        "description": "postal"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "title"
+                      },
+                      "first_name": {
+                        "type": "string",
+                        "description": "first_name"
+                      },
+                      "middle_name": {
+                        "type": "string",
+                        "description": "middle_name"
+                      },
+                      "last_name": {
+                        "type": "string",
+                        "description": "last_name"
+                      },
+                      "suffix": {
+                        "type": "string",
+                        "description": "suffix"
+                      },
+                      "position": {
+                        "type": "string",
+                        "description": "position"
+                      },
+                      "organization": {
+                        "type": "string",
+                        "description": "organization"
+                      },
+                      "address_contact_methods": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "contact_type": {
+                              "type": "string",
+                              "description": "contact_type"
+                            },
+                            "contact_info": {
+                              "type": "string",
+                              "description": "contact_info"
+                            }
+                          }
+                        },
+                        "description": "address_contact_methods"
+                      }
+                    }
+                  },
+                  "description": "contacts"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/{scenario_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Get",
+        "description": "GL Budget Get",
+        "operationId": "GL_Budget_Get",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Update",
+        "description": "Get Budget Account List",
+        "operationId": "GL_Budget_Update",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "account_number": {
+                    "type": "string",
+                    "description": "account_number"
+                  },
+                  "project_id": {
+                    "type": "string",
+                    "description": "project_id"
+                  },
+                  "grant_description": {
+                    "type": "string",
+                    "description": "grant_description"
+                  },
+                  "total": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "total"
+                  },
+                  "periods": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "amount"
+                        },
+                        "sequence": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "sequence"
+                        },
+                        "year_id": {
+                          "type": "string",
+                          "description": "year_id"
+                        }
+                      }
+                    },
+                    "description": "periods"
+                  },
+                  "notes": {
+                    "type": "string",
+                    "description": "notes"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/{scenario_id}/accounts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Account List",
+        "description": "GL Budget Account List",
+        "operationId": "GL_Budget_Account_List",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "account_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/{scenario_id}/details": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Detail Get",
+        "description": "GL Budget Detail Get",
+        "operationId": "GL_Budget_Detail_Get",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/{scenario_id}/details/lines": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Detail Lines List",
+        "description": "GL Budget Detail Lines List",
+        "operationId": "GL_Budget_Detail_Lines_List",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "scenarioId",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/{scenario_id}/lines": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Lines Create",
+        "description": "GL Budget Lines Create",
+        "operationId": "GL_Budget_Lines_Create",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "account_number": {
+                    "type": "string",
+                    "description": "account_number"
+                  },
+                  "project_id": {
+                    "type": "string",
+                    "description": "project_id"
+                  },
+                  "grant_description": {
+                    "type": "string",
+                    "description": "grant_description"
+                  },
+                  "total": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "total"
+                  },
+                  "periods": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "amount": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "amount"
+                        },
+                        "sequence": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "sequence"
+                        },
+                        "year_id": {
+                          "type": "string",
+                          "description": "year_id"
+                        }
+                      }
+                    },
+                    "description": "periods"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/{scenario_id}/projects": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Project List",
+        "description": "GL Budget Project List",
+        "operationId": "GL_Budget_Project_List",
+        "parameters": [
+          {
+            "name": "scenario_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ui_project_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/budgets/scenarios": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Scenario List",
+        "description": "GL Budget Scenario List",
+        "operationId": "GL_Budget_Scenario_List",
+        "parameters": []
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Budget Scenario Create",
+        "description": "GL Budget Scenario Create",
+        "operationId": "GL_Budget_Scenario_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "description": "value"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/classes": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Class List",
+        "description": "GL Class List",
+        "operationId": "GL_Class_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/fiscalyears": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Fiscal Year List",
+        "description": "GL Fiscal Year List",
+        "operationId": "GL_Fiscal_Year_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/grants/{grant_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Grant Get",
+        "description": "GL Grant Get",
+        "operationId": "GL_Grant_Get",
+        "parameters": [
+          {
+            "name": "grant_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/grants/{grant_id}/contacts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Grant Contacts List",
+        "description": "GL Grant Contacts List",
+        "operationId": "GL_Grant_Contacts_List",
+        "parameters": [
+          {
+            "name": "grant_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/grants/customfields": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Grant Custom Field List",
+        "description": "GL Grant Custom Field List",
+        "operationId": "GL_Grant_Custom_Field_List",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/grants/{grant_id}/projects": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Grant Projects List",
+        "description": "GL Grant Projects List",
+        "operationId": "GL_Grant_Projects_List",
+        "parameters": [
+          {
+            "name": "grant_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/grants": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Grants List",
+        "description": "GL Grants List",
+        "operationId": "GL_Grants_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_code_value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/journalentrybatches/{batch_id}/journalentries": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Journal Entries List",
+        "description": "GL Journal Entries List",
+        "operationId": "GL_Journal_Entries_List",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL_Journal_Clear",
+        "description": "GL_Journal_Clear",
+        "operationId": "GL_Journal_Clear",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Journal Entry Create",
+        "description": "GL Journal Entry Create",
+        "operationId": "GL_Journal_Entry_Create",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type_code": {
+                    "type": "string",
+                    "description": "type_code"
+                  },
+                  "account_number": {
+                    "type": "string",
+                    "description": "account_number"
+                  },
+                  "post_date": {
+                    "type": "string",
+                    "description": "post_date"
+                  },
+                  "encumbrance": {
+                    "type": "string",
+                    "description": "encumbrance"
+                  },
+                  "journal": {
+                    "type": "string",
+                    "description": "journal"
+                  },
+                  "reference": {
+                    "type": "string",
+                    "description": "reference"
+                  },
+                  "amount": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "amount"
+                  },
+                  "notes": {
+                    "type": "string",
+                    "description": "notes"
+                  },
+                  "distributions": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "ui_project_id": {
+                          "type": "string",
+                          "description": "ui_project_id"
+                        },
+                        "account_class": {
+                          "type": "string",
+                          "description": "account_class"
+                        },
+                        "transaction_code_values": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string",
+                                "description": "name"
+                              },
+                              "value": {
+                                "type": "string",
+                                "description": "value"
+                              },
+                              "id": {
+                                "type": "integer",
+                                "format": "int32",
+                                "description": "id"
+                              }
+                            }
+                          },
+                          "description": "transaction_code_values"
+                        },
+                        "amount": {
+                          "type": "number",
+                          "format": "float",
+                          "description": "amount"
+                        },
+                        "percent": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "percent"
+                        }
+                      }
+                    },
+                    "description": "distributions"
+                  },
+                  "custom_fields": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "field_name": {
+                          "type": "string",
+                          "description": "field_name"
+                        },
+                        "value": {
+                          "type": "string",
+                          "description": "value"
+                        },
+                        "comments": {
+                          "type": "string",
+                          "description": "comments"
+                        },
+                        "date": {
+                          "type": "string",
+                          "description": "date"
+                        }
+                      }
+                    },
+                    "description": "custom_fields"
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "x-ms-visibility": "advanced"
+      }
+    },
+    "/generalledger/v1/journalentrybatches": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Batch Create 2",
+        "description": "GL Batch Create 2",
+        "operationId": "GL_Batch_Create_2",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "batch_status": {
+                  "type": "string",
+                  "description": "Batch Status"
+                },
+                "create_interfund_sets": {
+                  "type": "boolean",
+                  "description": "create_interfund_sets"
+                },
+                "create_bank_account_adjustments": {
+                  "type": "boolean",
+                  "description": "create_bank_account_adjustments"
+                },
+                "journal_entries": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "post_date": {
+                        "type": "string",
+                        "description": "post_date"
+                      },
+                      "encumbrance": {
+                        "type": "string",
+                        "description": "encumbrance"
+                      },
+                      "reverse_date": {
+                        "type": "string",
+                        "description": "reverse_date"
+                      },
+                      "journal": {
+                        "type": "string",
+                        "description": "journal"
+                      },
+                      "reference": {
+                        "type": "string",
+                        "description": "reference"
+                      },
+                      "amount": {
+                        "type": "number",
+                        "format": "float",
+                        "description": "amount"
+                      },
+                      "notes": {
+                        "type": "string",
+                        "description": "notes"
+                      },
+                      "distributions": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "Project ID"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  },
+                                  "id": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "id"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "number",
+                              "format": "float",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            }
+                          }
+                        },
+                        "description": "distributions"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "field_name": {
+                              "type": "string",
+                              "description": "field_name"
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "value"
+                            },
+                            "comments": {
+                              "type": "string",
+                              "description": "comments"
+                            },
+                            "date": {
+                              "type": "string",
+                              "description": "date"
+                            }
+                          }
+                        },
+                        "description": "custom_fields"
+                      }
+                    }
+                  },
+                  "description": "journal_entries"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/journalentrybatches/attachments": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Journal Entry Batch Attachment Create",
+        "description": "GL Journal Entry Batch Attachment Create",
+        "operationId": "GL_Journal_Entry_Batch_Attachment_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "parent_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "parent_id"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "media_type": {
+                  "type": "string",
+                  "description": "media_type"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/periodsummary/summarize": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Period Summary Process Start",
+        "description": "GL Period Summary Process Start",
+        "operationId": "GL_Period_Summary_Process_Start",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fiscal_period_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "fiscal_period_id"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/periodsummary/processinginfo": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Period Summary Process Status",
+        "description": "GL Period Summary Process Status",
+        "operationId": "GL_Period_Summary_Process_Status",
+        "parameters": []
+      }
+    },
+    "/generalledger/v1/periodsummary/summaries": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Period Summary List",
+        "description": "GL Period Summary List",
+        "operationId": "GL_Period_Summary_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "fiscal_period_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "account_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ui_project_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "fiscal_year_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/summary/{fiscal_year_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Ledger Summary List",
+        "description": "GL Ledger Summary List",
+        "operationId": "GL_Ledger_Summary_List",
+        "parameters": [
+          {
+            "name": "fiscal_year_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "fiscal_period_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "account_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ui_project_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects/{project_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Get",
+        "description": "GL Project Get",
+        "operationId": "GL_Project_Get",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Update",
+        "description": "GL Project Update",
+        "operationId": "GL_Project_Update",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "ui_project_id": {
+                  "type": "string",
+                  "description": "ui_project_id"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "start_date": {
+                  "type": "string",
+                  "description": "start_date"
+                },
+                "end_date": {
+                  "type": "string",
+                  "description": "end_date"
+                },
+                "prevent_data_entry": {
+                  "type": "boolean",
+                  "description": "prevent_data_entry"
+                },
+                "prevent_posting_after": {
+                  "type": "boolean",
+                  "description": "prevent_posting_after"
+                },
+                "posting_date": {
+                  "type": "string",
+                  "description": "posting_date"
+                },
+                "location": {
+                  "type": "string",
+                  "description": "location"
+                },
+                "division": {
+                  "type": "string",
+                  "description": "division"
+                },
+                "department": {
+                  "type": "string",
+                  "description": "department"
+                },
+                "account_restrictions": {
+                  "type": "object",
+                  "properties": {
+                    "allow_or_restrict": {
+                      "type": "string",
+                      "description": "allow_or_restrict"
+                    },
+                    "criteria": {
+                      "type": "string",
+                      "description": "criteria"
+                    },
+                    "selected_account_numbers": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "selected_account_numbers"
+                    }
+                  },
+                  "description": "account_restrictions"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects/attachments": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Attachment Create",
+        "description": "GL Project Attachment Create",
+        "operationId": "GL_Project_Attachment_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "parent_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "parent_id"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "media_type": {
+                  "type": "string",
+                  "description": "media_type"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects/{project_id}/attachments/{attachment_id}": {
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Attachment Delete",
+        "description": "GL Project Attachment Delete",
+        "operationId": "GL_Project_Attachment_Delete",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "attachment_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects/{project_id}/attachments": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Attachment List",
+        "description": "GL Project Attachment List",
+        "operationId": "GL_Project_Attachment_List",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects/{project_id}/contacts": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Contact Create",
+        "description": "GL Project Contact Create",
+        "operationId": "GL_Project_Contact_Create",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "country": {
+                  "type": "string",
+                  "description": "country"
+                },
+                "city": {
+                  "type": "string",
+                  "description": "city"
+                },
+                "county": {
+                  "type": "string",
+                  "description": "county"
+                },
+                "state": {
+                  "type": "string",
+                  "description": "state"
+                },
+                "address_line": {
+                  "type": "string",
+                  "description": "address_line"
+                },
+                "postal": {
+                  "type": "string",
+                  "description": "postal"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                },
+                "first_name": {
+                  "type": "string",
+                  "description": "first_name"
+                },
+                "middle_name": {
+                  "type": "string",
+                  "description": "middle_name"
+                },
+                "last_name": {
+                  "type": "string",
+                  "description": "last_name"
+                },
+                "suffix": {
+                  "type": "string",
+                  "description": "suffix"
+                },
+                "position": {
+                  "type": "string",
+                  "description": "position"
+                },
+                "organization": {
+                  "type": "string",
+                  "description": "organization"
+                },
+                "address_contact_methods": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "contact_type": {
+                        "type": "string",
+                        "description": "contact_type"
+                      },
+                      "contact_info": {
+                        "type": "string",
+                        "description": "contact_info"
+                      }
+                    }
+                  },
+                  "description": "address_contact_methods"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/projects/{project_id}/notes": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Notes Get",
+        "description": "GL Project Notes Get",
+        "operationId": "GL_Project_Notes_Get",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Project Note Create",
+        "description": "GL Project Note Create",
+        "operationId": "GL_Project_Note_Create",
+        "parameters": [
+          {
+            "name": "project_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "note_type": {
+                  "type": "string",
+                  "description": "note_type"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "content"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "is_complete": {
+                  "type": "boolean",
+                  "description": "is_complete"
+                },
+                "assign_to": {
+                  "type": "string",
+                  "description": "assign_to"
+                },
+                "completed_date": {
+                  "type": "string",
+                  "description": "completed_date"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/transactiondistributions": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Transaction Distribution Get",
+        "description": "GL Transaction Distribution Get",
+        "operationId": "GL_Transaction_Distribution_Get",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "account_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ui_project_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "batch_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ui_batch_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "journal",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "type_code",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_code_1_value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_code_2_value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_code_3_value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_code_4_value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_code_5_value",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "encumbrance",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "post_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/addresses": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Address List",
+        "description": "GL Address List",
+        "operationId": "GL_Address_List",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Address Create",
+        "description": "AP Address Create",
+        "operationId": "AP_Address_Create",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "country": {
+                  "type": "string",
+                  "description": "country"
+                },
+                "city": {
+                  "type": "string",
+                  "description": "city"
+                },
+                "county": {
+                  "type": "string",
+                  "description": "county"
+                },
+                "state": {
+                  "type": "string",
+                  "description": "state"
+                },
+                "address_line": {
+                  "type": "string",
+                  "description": "address_line"
+                },
+                "postal": {
+                  "type": "string",
+                  "description": "postal"
+                },
+                "is_primary": {
+                  "type": "boolean",
+                  "description": "is_primary"
+                },
+                "is_invoices": {
+                  "type": "boolean",
+                  "description": "is_invoices"
+                },
+                "is_pos": {
+                  "type": "boolean",
+                  "description": "is_pos"
+                },
+                "issue_1099s": {
+                  "type": "boolean",
+                  "description": "issue_1099s"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                },
+                "first_name": {
+                  "type": "string",
+                  "description": "first_name"
+                },
+                "middle_name": {
+                  "type": "string",
+                  "description": "middle_name"
+                },
+                "last_name": {
+                  "type": "string",
+                  "description": "last_name"
+                },
+                "suffix": {
+                  "type": "string",
+                  "description": "suffix"
+                },
+                "position": {
+                  "type": "string",
+                  "description": "position"
+                },
+                "address_contact_methods": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "contact_method_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "contact_method_id"
+                      },
+                      "contact_type": {
+                        "type": "string",
+                        "description": "contact_type"
+                      },
+                      "contact_info": {
+                        "type": "string",
+                        "description": "contact_info"
+                      }
+                    }
+                  },
+                  "description": "address_contact_methods"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/addresses/{address_id}": {
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Address Delete",
+        "description": "AP Address Delete",
+        "operationId": "AP_Address_Delete",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "address_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Address Update",
+        "description": "AP Address Update",
+        "operationId": "AP_Address_Update",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "address_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "country": {
+                  "type": "string",
+                  "description": "country"
+                },
+                "city": {
+                  "type": "string",
+                  "description": "city"
+                },
+                "county": {
+                  "type": "string",
+                  "description": "county"
+                },
+                "state": {
+                  "type": "string",
+                  "description": "state"
+                },
+                "postal": {
+                  "type": "string",
+                  "description": "postal"
+                },
+                "address_line": {
+                  "type": "string",
+                  "description": "address_line"
+                },
+                "is_primary": {
+                  "type": "boolean",
+                  "description": "is_primary"
+                },
+                "is_invoices": {
+                  "type": "boolean",
+                  "description": "is_invoices"
+                },
+                "is_pos": {
+                  "type": "boolean",
+                  "description": "is_pos"
+                },
+                "is_1099": {
+                  "type": "boolean",
+                  "description": "is_1099"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                },
+                "first_name": {
+                  "type": "string",
+                  "description": "first_name"
+                },
+                "middle_name": {
+                  "type": "string",
+                  "description": "middle_name"
+                },
+                "last_name": {
+                  "type": "string",
+                  "description": "last_name"
+                },
+                "suffix": {
+                  "type": "string",
+                  "description": "suffix"
+                },
+                "position": {
+                  "type": "string",
+                  "description": "position"
+                },
+                "address_contact_methods": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "contact_method_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "contact_method_id"
+                      },
+                      "contact_type": {
+                        "type": "string",
+                        "description": "contact_type"
+                      },
+                      "contact_info": {
+                        "type": "string",
+                        "description": "contact_info"
+                      }
+                    }
+                  },
+                  "description": "address_contact_methods"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/addresses/{address_id}/contactmethods": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Contact Method List",
+        "description": "AP Contact Method List",
+        "operationId": "AP_Contact_Method_List",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "address_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Contact Method Create",
+        "description": "AP Contact Method Create",
+        "operationId": "AP_Contact_Method_Create",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "address_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "vendor_id"
+                },
+                "address_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "address_id"
+                },
+                "contact_type": {
+                  "type": "string",
+                  "description": "contact_type"
+                },
+                "contact_info": {
+                  "type": "string",
+                  "description": "contact_info"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/creditmemos/{credit_memo_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Credit Memo Get",
+        "description": "AP Credit Memo Get",
+        "operationId": "AP_Credit_Memo_Get",
+        "parameters": [
+          {
+            "name": "credit_memo_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Credit Memo Delete",
+        "description": "AP Credit Memo Delete",
+        "operationId": "AP_Credit_Memo_Delete",
+        "parameters": [
+          {
+            "name": "credit_memo_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Credit Memo Update",
+        "description": "AP Credit Memo Update",
+        "operationId": "AP_Credit_Memo_Update",
+        "parameters": [
+          {
+            "name": "credit_memo_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "vendor_id"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "amount"
+                },
+                "credit_memo_number": {
+                  "type": "string",
+                  "description": "credit_memo_number"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "post_status": {
+                  "type": "string",
+                  "description": "post_status"
+                },
+                "post_date": {
+                  "type": "string",
+                  "description": "post_date"
+                },
+                "distributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "distribution_splits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "ui_project_id"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            }
+                          }
+                        },
+                        "description": "distribution_splits"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {},
+                        "description": "custom_fields"
+                      }
+                    }
+                  },
+                  "description": "distributions"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {},
+                  "description": "custom_fields"
+                },
+                "applied_invoices": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "invoice_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "invoice_id"
+                      },
+                      "credit_memo_amount_applied": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "credit_memo_amount_applied"
+                      },
+                      "post_date": {
+                        "type": "string",
+                        "description": "post_date"
+                      }
+                    }
+                  },
+                  "description": "applied_invoices"
+                },
+                "form_1099_box_numbers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string",
+                        "description": "number"
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "state"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      }
+                    }
+                  },
+                  "description": "form_1099_box_numbers"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/creditmemos": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Credit Memo Create",
+        "description": "AP Credit Memo Create",
+        "operationId": "AP_Credit_Memo_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "vendor_id"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "amount"
+                },
+                "credit_memo_number": {
+                  "type": "string",
+                  "description": "credit_memo_number"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "post_status": {
+                  "type": "string",
+                  "description": "post_status"
+                },
+                "post_date": {
+                  "type": "string",
+                  "description": "post_date"
+                },
+                "invoice_applications": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "credit_memo_amount_to_apply": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "credit_memo_amount_to_apply"
+                      },
+                      "invoice_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "invoice_id"
+                      },
+                      "post_date": {
+                        "type": "string",
+                        "description": "post_date"
+                      }
+                    }
+                  },
+                  "description": "invoice_applications"
+                },
+                "distributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "distribution_splits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "ui_project_id"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  },
+                                  "id": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "id"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            }
+                          }
+                        },
+                        "description": "distribution_splits"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {},
+                        "description": "custom_fields"
+                      }
+                    }
+                  },
+                  "description": "distributions"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                },
+                "form_1099_box_numbers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string",
+                        "description": "number"
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "state"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      }
+                    }
+                  },
+                  "description": "form_1099_box_numbers"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/invoices": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Invoice List",
+        "description": "AP Invoice List",
+        "operationId": "AP_Invoice_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "invoice_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "vendor_name",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "date_added",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "added_by",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified_by",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "payment_method",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "post_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "search_text",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Invoice Create",
+        "description": "AP Invoice Create",
+        "operationId": "AP_Invoice_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "vendor_id"
+                },
+                "amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "amount"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "invoice_number": {
+                  "type": "string",
+                  "description": "invoice_number"
+                },
+                "approval_status": {
+                  "type": "string",
+                  "description": "approval_status"
+                },
+                "due_date": {
+                  "type": "string",
+                  "description": "due_date"
+                },
+                "payment_details": {
+                  "type": "object",
+                  "properties": {
+                    "remit_to": {
+                      "type": "object",
+                      "properties": {
+                        "address_id": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "address_id"
+                        }
+                      },
+                      "description": "remit_to"
+                    },
+                    "payment_method": {
+                      "type": "string",
+                      "description": "payment_method"
+                    },
+                    "paid_from": {
+                      "type": "string",
+                      "description": "paid_from"
+                    },
+                    "hold_payment": {
+                      "type": "boolean",
+                      "description": "hold_payment"
+                    },
+                    "create_separate_payment": {
+                      "type": "boolean",
+                      "description": "create_separate_payment"
+                    },
+                    "credit_card_account_id": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "credit_card_account_id"
+                    },
+                    "credit_card_id": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "credit_card_id"
+                    }
+                  },
+                  "description": "payment_details"
+                },
+                "invoice_date": {
+                  "type": "string",
+                  "description": "invoice_date"
+                },
+                "post_status": {
+                  "type": "string",
+                  "description": "post_status"
+                },
+                "post_date": {
+                  "type": "string",
+                  "description": "post_date"
+                },
+                "distribute_discounts": {
+                  "type": "boolean",
+                  "description": "distribute_discounts"
+                },
+                "distributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "distribution_splits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "ui_project_id"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  },
+                                  "id": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "id"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            }
+                          }
+                        },
+                        "description": "distribution_splits"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "description"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {},
+                        "description": "custom_fields"
+                      }
+                    }
+                  },
+                  "description": "distributions"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                },
+                "form_1099_box_numbers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string",
+                        "description": "number"
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "state"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      }
+                    }
+                  },
+                  "description": "form_1099_box_numbers"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/invoices/{invoice_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Invoice Get",
+        "description": "AP Invoice Get",
+        "operationId": "AP_Invoice_Get",
+        "parameters": [
+          {
+            "name": "invoice_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Invoice Update",
+        "description": "AP Invoice Update",
+        "operationId": "AP_Invoice_Update",
+        "parameters": [
+          {
+            "name": "invoice_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "vendor_id"
+                },
+                "vendor_name": {
+                  "type": "string",
+                  "description": "vendor_name"
+                },
+                "invoice_number": {
+                  "type": "string",
+                  "description": "invoice_number"
+                },
+                "invoice_date": {
+                  "type": "string",
+                  "description": "invoice_date"
+                },
+                "due_date": {
+                  "type": "string",
+                  "description": "due_date"
+                },
+                "amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "amount"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "status": {
+                  "type": "string",
+                  "description": "status"
+                },
+                "invoice_payment_detail": {
+                  "type": "object",
+                  "properties": {
+                    "remit_to": {
+                      "type": "object",
+                      "properties": {
+                        "address_id": {
+                          "type": "integer",
+                          "format": "int32",
+                          "description": "address_id"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "description"
+                        },
+                        "country": {
+                          "type": "string",
+                          "description": "country"
+                        },
+                        "city": {
+                          "type": "string",
+                          "description": "city"
+                        },
+                        "county": {
+                          "type": "string",
+                          "description": "county"
+                        },
+                        "state": {
+                          "type": "string",
+                          "description": "state"
+                        },
+                        "postal": {
+                          "type": "string",
+                          "description": "postal"
+                        },
+                        "address_line": {
+                          "type": "string",
+                          "description": "address_line"
+                        },
+                        "contact_name": {
+                          "type": "string",
+                          "description": "contact_name"
+                        }
+                      },
+                      "description": "remit_to"
+                    },
+                    "payment_method": {
+                      "type": "string",
+                      "description": "payment_method"
+                    },
+                    "paid_from": {
+                      "type": "string",
+                      "description": "paid_from"
+                    },
+                    "hold_payment": {
+                      "type": "boolean",
+                      "description": "hold_payment"
+                    },
+                    "create_separate_payment": {
+                      "type": "boolean",
+                      "description": "create_separate_payment"
+                    },
+                    "credit_card_account_id": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "credit_card_account_id"
+                    },
+                    "credit_card_id": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "credit_card_id"
+                    }
+                  },
+                  "description": "invoice_payment_detail"
+                },
+                "post_status": {
+                  "type": "string",
+                  "description": "post_status"
+                },
+                "post_date": {
+                  "type": "string",
+                  "description": "post_date"
+                },
+                "distribute_discounts": {
+                  "type": "boolean",
+                  "description": "distribute_discounts"
+                },
+                "distributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "distribution_splits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "ui_project_id"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  },
+                                  "id": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "id"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            }
+                          }
+                        },
+                        "description": "distribution_splits"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "description"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {},
+                        "description": "custom_fields"
+                      }
+                    }
+                  },
+                  "description": "distributions"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "is_required": {
+                        "type": "boolean",
+                        "description": "is_required"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/invoices/attachments": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Invoice Attachment Create",
+        "description": "AP Invoice Attachment Create",
+        "operationId": "AP_Invoice_Attachment_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "parent_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "parent_id"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "media_type": {
+                  "type": "string",
+                  "description": "media_type"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/purchaseorders": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Purchase Order List",
+        "description": "AP Purchase Order List",
+        "operationId": "AP_Purchase_Order_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "search_text",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Purchase Order Create",
+        "description": "AP Purchase Order Create",
+        "operationId": "AP_Purchase_Order_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "order_number": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "order_number"
+                },
+                "order_date": {
+                  "type": "string",
+                  "description": "order_date"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "order_status": {
+                  "type": "string",
+                  "description": "order_status"
+                },
+                "vendor_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "vendor_id"
+                },
+                "terms": {
+                  "type": "string",
+                  "description": "terms"
+                },
+                "ship_to_address_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "ship_to_address_id"
+                },
+                "department": {
+                  "type": "string",
+                  "description": "department"
+                },
+                "buyer": {
+                  "type": "string",
+                  "description": "buyer"
+                },
+                "ship_via": {
+                  "type": "string",
+                  "description": "ship_via"
+                },
+                "fob": {
+                  "type": "string",
+                  "description": "fob"
+                },
+                "ordered_by": {
+                  "type": "string",
+                  "description": "ordered_by"
+                },
+                "order_from_contact_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "order_from_contact_id"
+                },
+                "attention": {
+                  "type": "string",
+                  "description": "attention"
+                },
+                "comments": {
+                  "type": "string",
+                  "description": "comments"
+                },
+                "expiration_date": {
+                  "type": "string",
+                  "description": "expiration_date"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "is_required": {
+                        "type": "boolean",
+                        "description": "is_required"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                },
+                "line_items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "description": "type"
+                      },
+                      "product_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "product_id"
+                      },
+                      "vendor_part_number": {
+                        "type": "string",
+                        "description": "vendor_part_number"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "description"
+                      },
+                      "quantity_ordered": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "quantity_ordered"
+                      },
+                      "unit_of_measure": {
+                        "type": "string",
+                        "description": "unit_of_measure"
+                      },
+                      "unit_cost": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "unit_cost"
+                      },
+                      "extended_cost": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "extended_cost"
+                      },
+                      "post_status": {
+                        "type": "string",
+                        "description": "post_status"
+                      },
+                      "post_date": {
+                        "type": "string",
+                        "description": "post_date"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "notes": {
+                        "type": "string",
+                        "description": "notes"
+                      },
+                      "deliver_to": {
+                        "type": "string",
+                        "description": "deliver_to"
+                      },
+                      "requested_by": {
+                        "type": "string",
+                        "description": "requested_by"
+                      },
+                      "department": {
+                        "type": "string",
+                        "description": "department"
+                      },
+                      "distributions": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "distribution_splits": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "ui_project_id": {
+                                    "type": "string",
+                                    "description": "ui_project_id"
+                                  },
+                                  "transaction_code_values": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string",
+                                          "description": "name"
+                                        },
+                                        "value": {
+                                          "type": "string",
+                                          "description": "value"
+                                        },
+                                        "id": {
+                                          "type": "integer",
+                                          "format": "int32",
+                                          "description": "id"
+                                        }
+                                      }
+                                    },
+                                    "description": "transaction_code_values"
+                                  },
+                                  "amount": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "amount"
+                                  },
+                                  "percent": {
+                                    "type": "integer",
+                                    "format": "int32",
+                                    "description": "percent"
+                                  },
+                                  "account_class": {
+                                    "type": "string",
+                                    "description": "account_class"
+                                  }
+                                }
+                              },
+                              "description": "distribution_splits"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "description": {
+                              "type": "string",
+                              "description": "description"
+                            },
+                            "account_number": {
+                              "type": "string",
+                              "description": "account_number"
+                            },
+                            "type_code": {
+                              "type": "string",
+                              "description": "type_code"
+                            },
+                            "custom_fields": {
+                              "type": "array",
+                              "items": {},
+                              "description": "custom_fields"
+                            }
+                          }
+                        },
+                        "description": "distributions"
+                      },
+                      "interfund_set": {
+                        "type": "string",
+                        "description": "interfund_set"
+                      }
+                    }
+                  },
+                  "description": "line_items"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/purchaseorders/{purchase_order_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Purchase Order Get",
+        "description": "AP Purchase Order Get",
+        "operationId": "AP_Purchase_Order_Get",
+        "parameters": [
+          {
+            "name": "purchase_order_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor List",
+        "description": "AP Vendor List",
+        "operationId": "AP_Vendor_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "vendor_name",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ui_vendor_id",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "customer_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "date_added",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "added_by",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "last_modified_by",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Create",
+        "description": "AP Vendor Create",
+        "operationId": "AP_Vendor_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_name": {
+                  "type": "string",
+                  "description": "vendor_name"
+                },
+                "vendor_type": {
+                  "type": "string",
+                  "description": "vendor_type"
+                },
+                "customer_number": {
+                  "type": "string",
+                  "description": "customer_number"
+                },
+                "tax_id_number": {
+                  "type": "string",
+                  "description": "tax_id_number"
+                },
+                "vendor_status": {
+                  "type": "string",
+                  "description": "vendor_status"
+                },
+                "issue_1099s": {
+                  "type": "boolean",
+                  "description": "issue_1099s"
+                },
+                "address": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "address_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "address_id"
+                      },
+                      "description": {
+                        "type": "string",
+                        "description": "description"
+                      },
+                      "country": {
+                        "type": "string",
+                        "description": "country"
+                      },
+                      "city": {
+                        "type": "string",
+                        "description": "city"
+                      },
+                      "county": {
+                        "type": "string",
+                        "description": "county"
+                      },
+                      "state": {
+                        "type": "string",
+                        "description": "state"
+                      },
+                      "postal": {
+                        "type": "string",
+                        "description": "postal"
+                      },
+                      "address_line": {
+                        "type": "string",
+                        "description": "address_line"
+                      },
+                      "is_primary": {
+                        "type": "boolean",
+                        "description": "is_primary"
+                      },
+                      "is_invoices": {
+                        "type": "boolean",
+                        "description": "is_invoices"
+                      },
+                      "is_pos": {
+                        "type": "boolean",
+                        "description": "is_pos"
+                      },
+                      "is_1099": {
+                        "type": "boolean",
+                        "description": "is_1099"
+                      },
+                      "title": {
+                        "type": "string",
+                        "description": "title"
+                      },
+                      "first_name": {
+                        "type": "string",
+                        "description": "first_name"
+                      },
+                      "middle_name": {
+                        "type": "string",
+                        "description": "middle_name"
+                      },
+                      "last_name": {
+                        "type": "string",
+                        "description": "last_name"
+                      },
+                      "suffix": {
+                        "type": "string",
+                        "description": "suffix"
+                      },
+                      "position": {
+                        "type": "string",
+                        "description": "position"
+                      },
+                      "address_contact_methods": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "contact_method_id": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "contact_method_id"
+                            },
+                            "contact_type": {
+                              "type": "string",
+                              "description": "contact_type"
+                            },
+                            "contact_info": {
+                              "type": "string",
+                              "description": "contact_info"
+                            }
+                          }
+                        },
+                        "description": "address_contact_methods"
+                      }
+                    }
+                  },
+                  "description": "address"
+                },
+                "vendor_payment_default": {
+                  "type": "object",
+                  "properties": {
+                    "has_credit_limit": {
+                      "type": "boolean",
+                      "description": "has_credit_limit"
+                    },
+                    "credit_limit": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "credit_limit"
+                    },
+                    "payment_terms": {
+                      "type": "string",
+                      "description": "payment_terms"
+                    },
+                    "account_name": {
+                      "type": "string",
+                      "description": "account_name"
+                    },
+                    "payment_method": {
+                      "type": "string",
+                      "description": "payment_method"
+                    },
+                    "payment_option": {
+                      "type": "string",
+                      "description": "payment_option"
+                    }
+                  },
+                  "description": "vendor_payment_default"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                },
+                "ui_defined_id": {
+                  "type": "string",
+                  "description": "ui_defined_id"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Get",
+        "description": "AP Vendor Get",
+        "operationId": "AP_Vendor_Get",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Update",
+        "description": "AP Vendor Update",
+        "operationId": "AP_Vendor_Update",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "vendor_name": {
+                  "type": "string",
+                  "description": "vendor_name"
+                },
+                "vendor_type": {
+                  "type": "string",
+                  "description": "vendor_type"
+                },
+                "customer_number": {
+                  "type": "string",
+                  "description": "customer_number"
+                },
+                "vendor_status": {
+                  "type": "string",
+                  "description": "vendor_status"
+                },
+                "issue_1099s": {
+                  "type": "boolean",
+                  "description": "issue_1099s"
+                },
+                "vendor_payment_default": {
+                  "type": "object",
+                  "properties": {
+                    "has_credit_limit": {
+                      "type": "boolean",
+                      "description": "has_credit_limit"
+                    },
+                    "credit_limit": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "credit_limit"
+                    },
+                    "payment_terms": {
+                      "type": "string",
+                      "description": "payment_terms"
+                    },
+                    "account_name": {
+                      "type": "string",
+                      "description": "account_name"
+                    },
+                    "payment_method": {
+                      "type": "string",
+                      "description": "payment_method"
+                    },
+                    "payment_option": {
+                      "type": "string",
+                      "description": "payment_option"
+                    }
+                  },
+                  "description": "vendor_payment_default"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/attachments": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Attachment Create",
+        "description": "AP Vendor Attachment Create",
+        "operationId": "AP_Vendor_Attachment_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "parent_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "parent_id"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "media_type": {
+                  "type": "string",
+                  "description": "media_type"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/attachments/{attachment_id}": {
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Attachment Delete",
+        "description": "AP Vendor Attachment Delete",
+        "operationId": "AP_Vendor_Attachment_Delete",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "attachment_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/attachments": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Attachment List",
+        "description": "AP Vendor Attachment List",
+        "operationId": "AP_Vendor_Attachment_List",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/contacts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Contact List",
+        "description": "AP Vendor Contact List",
+        "operationId": "AP_Vendor_Contact_List",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/defaultdistributions": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Default Distribution List",
+        "description": "AP Vendor Default Distribution List",
+        "operationId": "AP_Vendor_Default_Distribution_List",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/accountspayable/v1/vendors/{vendor_id}/notes": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Notes List",
+        "description": "AP Vendor Notes List",
+        "operationId": "AP_Vendor_Notes_List",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "AP Vendor Note Create",
+        "description": "AP Vendor Note Create",
+        "operationId": "AP_Vendor_Note_Create",
+        "parameters": [
+          {
+            "name": "vendor_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "note_type": {
+                  "type": "string",
+                  "description": "note_type"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "content"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "is_complete": {
+                  "type": "boolean",
+                  "description": "is_complete"
+                },
+                "assign_to": {
+                  "type": "string",
+                  "description": "assign_to"
+                },
+                "completed_date": {
+                  "type": "string",
+                  "description": "completed_date"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/treasury/v1/bankaccounts/{bank_account_id}/adjustments": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Adjustment List",
+        "description": "Treasury Adjustment List",
+        "operationId": "Treasury_Adjustment_List",
+        "parameters": [
+          {
+            "name": "bank_account_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "post_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "adjustment_type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Adjustment Create",
+        "description": "Treasury Adjustment Create",
+        "operationId": "Treasury_Adjustment_Create",
+        "parameters": [
+          {
+            "name": "bank_account_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "category": {
+                  "type": "string",
+                  "description": "category"
+                },
+                "number": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "number"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "amount"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "transfer_to_account": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "transfer_to_account"
+                },
+                "reference": {
+                  "type": "string",
+                  "description": "reference"
+                },
+                "is_cleared": {
+                  "type": "boolean",
+                  "description": "is_cleared"
+                },
+                "cleared_date": {
+                  "type": "string",
+                  "description": "cleared_date"
+                },
+                "post_status": {
+                  "type": "string",
+                  "description": "post_status"
+                },
+                "post_date": {
+                  "type": "string",
+                  "description": "post_date"
+                },
+                "distributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "distribution_id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "distribution_id"
+                      },
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {},
+                        "description": "custom_fields"
+                      },
+                      "distribution_splits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "distribution_split_id": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "distribution_split_id"
+                            },
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "ui_project_id"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            }
+                          }
+                        },
+                        "description": "distribution_splits"
+                      }
+                    }
+                  },
+                  "description": "distributions"
+                },
+                "interfund_entry_set": {
+                  "type": "string",
+                  "description": "interfund_entry_set"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/treasury/v1/adjustments/{adjustment_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Adjustment Get",
+        "description": "Treasury Adjustment Get",
+        "operationId": "Treasury_Adjustment_Get",
+        "parameters": [
+          {
+            "name": "adjustment_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/bankaccounts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Bank Account List",
+        "description": "Treasury Bank Account List",
+        "operationId": "Treasury_Bank_Account_List",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/bankaccounts/{bank_account_id}/register": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Bank Account Register List",
+        "description": "Treasury Bank Account Register List",
+        "operationId": "Treasury_Bank_Account_Register_List",
+        "parameters": [
+          {
+            "name": "bank_account_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "post_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/deposits/{deposit_id}/cashreceipts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Cash Receipts List",
+        "description": "Treasury Cash Receipts List",
+        "operationId": "Treasury_Cash_Receipts_List",
+        "parameters": [
+          {
+            "name": "deposit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Cash Receipt Create",
+        "description": "Treasury Cash Receipt Create",
+        "operationId": "Treasury_Cash_Receipt_Create",
+        "parameters": [
+          {
+            "name": "deposit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "amount"
+                },
+                "category": {
+                  "type": "string",
+                  "description": "category"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "payment_from": {
+                  "type": "string",
+                  "description": "payment_from"
+                },
+                "payment_info": {
+                  "type": "object",
+                  "properties": {
+                    "payment_method": {
+                      "type": "string",
+                      "description": "payment_method"
+                    },
+                    "card_type": {
+                      "type": "string",
+                      "description": "card_type"
+                    },
+                    "card_number": {
+                      "type": "string",
+                      "description": "card_number"
+                    },
+                    "expiration_month": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "expiration_month"
+                    },
+                    "expiration_year": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "expiration_year"
+                    },
+                    "authorization_number": {
+                      "type": "string",
+                      "description": "authorization_number"
+                    }
+                  },
+                  "description": "payment_info"
+                },
+                "receipt_status": {
+                  "type": "string",
+                  "description": "receipt_status"
+                },
+                "receipt_address": {
+                  "type": "string",
+                  "description": "receipt_address"
+                },
+                "distributions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "amount": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "amount"
+                      },
+                      "account_number": {
+                        "type": "string",
+                        "description": "account_number"
+                      },
+                      "type_code": {
+                        "type": "string",
+                        "description": "type_code"
+                      },
+                      "custom_fields": {
+                        "type": "array",
+                        "items": {},
+                        "description": "custom_fields"
+                      },
+                      "distribution_splits": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "ui_project_id": {
+                              "type": "string",
+                              "description": "ui_project_id"
+                            },
+                            "transaction_code_values": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string",
+                                    "description": "name"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "description": "value"
+                                  }
+                                }
+                              },
+                              "description": "transaction_code_values"
+                            },
+                            "amount": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "amount"
+                            },
+                            "percent": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "percent"
+                            },
+                            "account_class": {
+                              "type": "string",
+                              "description": "account_class"
+                            }
+                          }
+                        },
+                        "description": "distribution_splits"
+                      }
+                    }
+                  },
+                  "description": "distributions"
+                },
+                "custom_fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "field_name": {
+                        "type": "string",
+                        "description": "field_name"
+                      },
+                      "value": {
+                        "type": "string",
+                        "description": "value"
+                      },
+                      "comments": {
+                        "type": "string",
+                        "description": "comments"
+                      },
+                      "date": {
+                        "type": "string",
+                        "description": "date"
+                      }
+                    }
+                  },
+                  "description": "custom_fields"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/treasury/v1/cashreceipts/{cash_receipt_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Cash Receipt Get",
+        "description": "Treasury Cash Receipt Get",
+        "operationId": "Treasury_Cash_Receipt_Get",
+        "parameters": [
+          {
+            "name": "cash_receipt_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/cashreceipts/attachments": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Cash Receipt Attachment Create",
+        "description": "Treasury Cash Receipt Attachment Create",
+        "operationId": "Treasury_Cash_Receipt_Attachment_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "parent_id": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "parent_id"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "media_type": {
+                  "type": "string",
+                  "description": "media_type"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/treasury/v1/bankaccounts/{bank_account_id}/checks[": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Checks List",
+        "description": "Treasury Checks List",
+        "operationId": "Treasury_Checks_List",
+        "parameters": [
+          {
+            "name": "bank_account_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "post_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "check_type",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "starting_check_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "ending_check_number",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/bankaccounts/{bank_account_id}/deposits": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Deposits List",
+        "description": "Treasury Deposits List",
+        "operationId": "Treasury_Deposits_List",
+        "parameters": [
+          {
+            "name": "bank_account_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "transaction_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "post_status",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_post_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_transaction_status_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Deposit Create",
+        "description": "Treasury Deposit Create",
+        "operationId": "Treasury_Deposit_Create",
+        "parameters": [
+          {
+            "name": "bank_account_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "string",
+                  "description": "number"
+                },
+                "type": {
+                  "type": "string",
+                  "description": "type"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "ui_deposit_id": {
+                  "type": "string",
+                  "description": "ui_deposit_id"
+                },
+                "projected_count": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "projected_count"
+                },
+                "projected_amount": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "projected_amount"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "post_status": {
+                  "type": "string",
+                  "description": "post_status"
+                },
+                "post_date": {
+                  "type": "string",
+                  "description": "post_date"
+                },
+                "created_date": {
+                  "type": "string",
+                  "description": "created_date"
+                },
+                "payment_methods_allowed": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "payment_methods_allowed"
+                },
+                "transaction_defaults": {
+                  "type": "object",
+                  "properties": {
+                    "receipt_date": {
+                      "type": "string",
+                      "description": "receipt_date"
+                    },
+                    "amount": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "amount"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "description"
+                    },
+                    "payment_method": {
+                      "type": "string",
+                      "description": "payment_method"
+                    },
+                    "category": {
+                      "type": "string",
+                      "description": "category"
+                    }
+                  },
+                  "description": "transaction_defaults"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/treasury/v1/deposits/{deposit_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Deposit Get",
+        "description": "Treasury Deposit Get",
+        "operationId": "Treasury_Deposit_Get",
+        "parameters": [
+          {
+            "name": "deposit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/payments/{payment_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Payment Get",
+        "description": "Treasury Payment Get",
+        "operationId": "Treasury_Payment_Get",
+        "parameters": [
+          {
+            "name": "payment_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/treasury/v1/payments/{payment_id}/transactions": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Treasury Payment Transactions List",
+        "description": "Treasury Payment Transactions List",
+        "operationId": "Treasury_Payment_Transactions_List",
+        "parameters": [
+          {
+            "name": "payment_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/statisticalunit/v1/units/{unit_id}/counts": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Count Search",
+        "description": "Stats Count Search",
+        "operationId": "Stats_Count_Search",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "include_line_items",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Count Create",
+        "description": "Stats Count Create",
+        "operationId": "Stats_Count_Create",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "line_items": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "line_number": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "line_number"
+                      },
+                      "unit_value": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "unit_value"
+                      },
+                      "elements": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer",
+                              "format": "int32",
+                              "description": "id"
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "value"
+                            }
+                          }
+                        },
+                        "description": "elements"
+                      }
+                    }
+                  },
+                  "description": "line_items"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/statisticalunit/v1/units/{unit_id}/counts/{count_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Count Get",
+        "description": "Stats Count Get",
+        "operationId": "Stats_Count_Get",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "count_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "include_line_items",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Count Delete",
+        "description": "Stats Count Delete",
+        "operationId": "Stats_Count_Delete",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "count_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Count Update",
+        "description": "Stats Count Update",
+        "operationId": "Stats_Count_Update",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "count_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/statisticalunit/v1/units/{unit_id}/counts/{count_id}/lineitems": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "count_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "summary": "Stats Line Items Search",
+        "description": "Stats Line Items Search",
+        "operationId": "Stats_Line_Items_Search"
+      }
+    },
+    "/statisticalunit/v1/units": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Unit Search",
+        "description": "Stats Unit Search",
+        "operationId": "Stats_Unit_Search",
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "include_inactive",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "search_text",
+            "in": "query",
+            "required": false,
+            "type": "string"
+          }
+        ]
+      },
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Unit Create",
+        "description": "Stats Unit Create",
+        "operationId": "Stats_Unit_Create",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "cumulative": {
+                  "type": "boolean",
+                  "description": "cumulative"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "elements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "id"
+                      }
+                    }
+                  },
+                  "description": "elements"
+                },
+                "integer": {
+                  "type": "boolean",
+                  "description": "integer"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/statisticalunit/v1/units/{unit_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Unit Get",
+        "description": "Stats Unit Get",
+        "operationId": "Stats_Unit_Get",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Unit Delete",
+        "description": "Stats Unit Delete",
+        "operationId": "Stats_Unit_Delete",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "patch": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "Stats Unit Update",
+        "description": "Stats Unit Update",
+        "operationId": "Stats_Unit_Update",
+        "parameters": [
+          {
+            "name": "unit_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "description": {
+                  "type": "string",
+                  "description": "description"
+                },
+                "name": {
+                  "type": "string",
+                  "description": "name"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/journalentrybatches/{batch_id}": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Journal Batch Get",
+        "description": "GL Journal Batch Get",
+        "operationId": "GL_Journal_Batch_Get",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      },
+      "delete": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Journal Entry Batch Delete",
+        "description": "GL Journal Entry Batch Delete",
+        "operationId": "GL_Journal_Entry_Batch_Delete",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    },
+    "/generalledger/v1/journalentrybatches/{batch_id}/summary": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "summary": "GL Journal Entry Summary",
+        "description": "GL Journal Entry Summary",
+        "operationId": "GL_Journal_Summary",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "oauth2_auth": {
+      "type": "oauth2",
+      "flow": "accessCode",
+      "authorizationUrl": "https://oauth2.sky.blackbaud.com/authorization",
+      "tokenUrl": "https://oauth2.sky.blackbaud.com/token",
+      "scopes": {}
+    }
+  },
+  "security": [
+    {
+      "oauth2_auth": []
+    }
+  ],
+  "tags": []
+}
