@@ -11,11 +11,15 @@ SETUP REQUIREMENTS
       •	Go to https://us.flow.microsoft.com/ and confirm the ability to login
      
      
+     
+     
 STEPS TO CONFIGURE (SUMMARY)
 
  - Create New Application at BB Developer Site
 
  - Configure FENXT Connector in MS Power Platform
+
+
 
 
 CREATE NEW APPLICATION AT BLACKBAUD DEVELOPER SITE
