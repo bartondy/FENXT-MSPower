@@ -5304,7 +5304,7 @@
         ]
       }
     },
-    "/treasury/v1/bankaccounts/{bank_account_id}/checks[": {
+    "/treasury/v1/bankaccounts/{bank_account_id}/checks": {
       "get": {
         "responses": {
           "default": {
